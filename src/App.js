@@ -15,7 +15,7 @@ function App() {
   return <Router>
 
 <nav>
-<Link to="" className='logo'>FURNIX</Link>
+<Link to="/" className='logo'>FURNIX</Link>
 <Link to="/" className='Link'>HOME</Link>
 <Link to="/about" className='Link'>ABOUT</Link>
 <Link to="/catalog" className='Link'>CATALOG</Link>

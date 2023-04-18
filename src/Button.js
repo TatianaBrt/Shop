@@ -1,10 +1,10 @@
 
-function Button({filteredFurniture}){
+function Button({filteredFurniture,filteredAll}){
 
 
     return(
         <div className="cont">
-  <button className="change" onClick={()=>filteredFurniture("all")}>All</button>
+  <button className="change" onClick={()=>filteredAll("all")}>All</button>
   <button className="change" onClick={()=>filteredFurniture("chair")}>chair</button>
   <button className="change" onClick={()=>filteredFurniture("sofa")}>sofa</button>
   <button className="change" onClick={()=>filteredFurniture("table")}>table</button>

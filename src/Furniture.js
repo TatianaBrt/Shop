@@ -1,3 +1,6 @@
+import Description from "./Description";
+
+
 function Furniture({word}){
 
   
@@ -11,10 +14,15 @@ return(
     <img src={image} width="300px" height="350px" alt="furniture"/>
     <div className="product-info">
    <h3>{namef}</h3>
-   <p className="description">{description.substring(400)}</p>
-    <h4>${price}</h4>
-   <button className="details" >Details</button>
-    </div>
+   
+   <h4>${price}</h4>
+   <Description description={description}
+   />
+ 
+ 
+      </div>
+
+     
     </div>
 )
 
