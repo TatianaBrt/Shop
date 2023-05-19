@@ -1,12 +1,12 @@
 nav{
-  background:#9BA5BF;
+  background:#3E8759;
   display: flex;
   justify-content: center;
   padding: 15px;
   font-family: 'Montserrat', sans-serif;
 }
 .Link{
-  padding: 10px 40px;
+  padding: 10px 20px;
   text-decoration: none;
   color: white;
 }
@@ -19,7 +19,7 @@ nav{
   font-family: 'Montserrat', sans-serif;
 }
 body{
-  background:#A887A6;
+  background:#FFDC0F;
 }
 .about{
   color:black;
@@ -35,10 +35,16 @@ h1{
 button {
   margin: 10px;
 }
-
+h3{
+  font-size: 16px;
+}
+h4{
+  font-size: 15px;
+}
 .products {
   display: flex;
   flex-wrap: wrap;
+ 
 }
 .product-card {
   padding: 2%;
@@ -47,10 +53,11 @@ button {
 }
 .cont {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .change {
-  background-color:#9BA5BF;
+  background-color:#3FB88B;
   color: white;
   padding: 10px;
   border: none;
@@ -63,6 +70,7 @@ button {
 }
 .description{
   text-align:inherit;
+  font-size: 15px;
 
 }
 .header{
@@ -75,20 +83,59 @@ text-align: center;
 .containerHome {
   display: flex;
   justify-content: center;
-  background-color: #A887A6;
+  background-color: #FFDC0F;
   height: 350px;
 }
 .buttonHome{
   width: 70px;
-  background: #75CFCD;
+  background: #FFDC0F;
   border: none;
 }
 
 .details{
-  background:#345F8C;
+  background:#3FB88B;
   padding: 10px;
   border: none;
   color:white;
+  width: 100px;
+
 }
 
+.categoryButtonSelected{
+  background-color: #3FB88B;
+  cursor:pointer;
+  
+}
+.categoryButton:hover {
+
+  background-color: darksalmon;
+ 
+}
+
+.allCategory{
+  display: flex;
+  justify-content:center;
+}
+.filterCategory{
+  padding: 10px;
+}
+
+.furnImg{
+  width: 200px;
+height: 300px;
+}
+
+
+.categoryButtonSelected{
+  background-color: #3FB88B;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+.categoryButton:hover {
+  background-color: #fdeb6b;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
 

@@ -1,40 +1,27 @@
+import { useState } from "react";
+import ChangeQuantity from "./ChangeQuantity";
+import { addItemToCart } from "./redux/cartSlice";
+import { useDispatch } from "react-redux";
 import Description from "./Description";
 
-
-function Furniture({word}){
-
+const Furniture = ({furniture}) =>{
+  const [quantity,setQuantity]=useState(1);
+  const dispatch=useDispatch();
+    return ( <div>
   
-    return(
-        <div className="products">
-        {word.map((thing=>{
-        const{id,image,namef,description,price}=thing;
-return(
-  
-    <div className="product-card" key={id}>
-    <img src={image} width="300px" height="350px" alt="furniture"/>
-    <div className="product-info">
-   <h3>{namef}</h3>
-   
-   <h4>${price}</h4>
-   <Description description={description}
-   />
+  <img className="furnImg" src={furniture.image} alt="furniture"/>
+  <h3>{furniture.namef}</h3>
+  <h4>${furniture.price}</h4>
  
- 
-      </div>
 
-     
+  <Description description={furniture.description}/>
+  <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
+  <button  onClick={()=>{dispatch(addItemToCart({furniture,quantity}))}}>Add to cart</button>
+
     </div>
-)
 
-        }))}
-        </div>
     )
-
 }
-
-
-
-
 
 
 export default Furniture;
