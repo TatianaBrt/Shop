@@ -1,25 +1,29 @@
 import { useSelector } from "react-redux";
 import CartItem from "./CartItem";
-import { getCartItems, getTotalPrice } from "./redux/cartSlice";
-
-
+import { getCartItems, getTotalPrice, getTotalQuantity } from "./redux/cartSlice";
 import StripeContainer from "./Stripe/StripeContainer";
+
 
 const  Cart=()=>{
 const cartItems=useSelector(getCartItems);
-const totalPrice=useSelector(getTotalPrice)
+const totalPrice=useSelector(getTotalPrice);
+const totalQuantity=useSelector(getTotalQuantity);
 
     return (
         <div>
-       <h3>TOTAL: $ {totalPrice} </h3>
-           
-      
+            <div className="totalQuantity">
+       <span className="totalPrice">Total: $ {totalPrice} </span>
+       <span className="totalPrice"> Quantity: {totalQuantity} </span>
+       </div>
       <StripeContainer/>
 
-       {cartItems.map(cartItem=> <CartItem cartItem={cartItem}/>)}
+   
+      <div className="cartList">
+      {cartItems.map(cartItem=> <CartItem cartItem={cartItem} key={cartItem.id}/>)}
+    
+  </div>
+        
     </div>
-
-     
     )
 }
 

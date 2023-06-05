@@ -1,14 +1,18 @@
 nav{
-  background:#3E8759;
+  background:#3FB88B;
   display: flex;
   justify-content: center;
-  padding: 15px;
-  font-family: 'Montserrat', sans-serif;
-}
+  padding: 10px;
+  font-family: 'Forum', cursive;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-weight: bolder;
+ }
 .Link{
   padding: 10px 20px;
   text-decoration: none;
-  color: white;
+  color: beige;
 }
 .logo{
   text-decoration: none;
@@ -16,21 +20,44 @@ nav{
   color: #580204;
   font-size: 30px;
   font-weight: bolder;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Forum', cursive;
 }
 body{
   background:#FFDC0F;
+  margin-top: 90px;
 }
 .about{
-  color:black;
-  font-family: 'Montserrat', sans-serif;
-  padding: 20px;
-  text-align: justify;
+  color:#49493c;
+  font-family: 'Forum', cursive;
+  display: flex;
+padding: 60px;
+justify-content: space-around;
+   }
+.brand{
+  background-color: rgba(10, 245, 159, 0.989);
+  padding: 30px;
+margin-right: 80px;
+text-align: left;
+box-shadow: 0 0 30px green;
 }
+.brandOne{
+  background-color: rgba(10, 245, 159, 0.989);
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 0 30px green;
+}
+.brandTwo{
+  background-color: rgba(10, 245, 159, 0.989);
+  padding: 30px;
+margin-left: 80px;
+text-align: left;
+box-shadow: 0 0 30px green;
+}
+
 h1{
   font-size: 30px;
   color: #580204;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Forum', cursive;
 }
 button {
   margin: 10px;
@@ -41,42 +68,16 @@ h3{
 h4{
   font-size: 15px;
 }
-.products {
-  display: flex;
-  flex-wrap: wrap;
- 
-}
-.product-card {
-  padding: 2%;
-  flex-grow: 1;
-  flex-basis: 16%;
-}
-.cont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.change {
-  background-color:#3FB88B;
-  color: white;
-  padding: 10px;
-  border: none;
-  font-family: 'Montserrat', sans-serif;
-  color:#363636;
-  font-weight: bolder;
-}
-.catalog{
-  text-align: center;
-}
+
 .description{
   text-align:inherit;
   font-size: 15px;
 
 }
 .header{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Forum', cursive;
+  padding: 10px;
   font-size: 50px;
-padding: 15px;
 text-align: center;
 }
 
@@ -98,19 +99,42 @@ text-align: center;
   border: none;
   color:white;
   width: 100px;
+  cursor: pointer;
+  box-shadow: 0 0 15px green;
+  border-radius: 8px;
+  }
 
-}
+  .btnAdd{
+    background: #cf308a;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+     }
+  .btnQuantity{
+    background: #ef9652;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+  }
+  .btnQ{
+display: flex;
+justify-content: center;
+  }
 
 .categoryButtonSelected{
   background-color: #3FB88B;
   cursor:pointer;
-  
-}
+  box-shadow: 0 0 15px green;
+  border-radius: 8px;
+  }
 .categoryButton:hover {
-
   background-color: darksalmon;
- 
-}
+  box-shadow: 0 0 15px rgb(255, 89, 0);
+  border-radius: 8px;
+ }
 
 .allCategory{
   display: flex;
@@ -122,20 +146,166 @@ text-align: center;
 
 .furnImg{
   width: 200px;
-height: 300px;
+  height: 250px;
 }
-
-
 .categoryButtonSelected{
   background-color: #3FB88B;
   cursor: pointer;
   margin: 5px;
-  padding: 5px;
+  padding: 8px;
 }
 .categoryButton:hover {
-  background-color: #fdeb6b;
+  background-color: #ef9652;
   cursor: pointer;
   margin: 5px;
-  padding: 5px;
+  padding: 8px;
+}
+.things{
+display: flex;
+justify-content: center;
+padding: 2%;
+flex-wrap: wrap;
+
+}
+.furnt{
+  padding: 10px;
+  color:#49493c;
+  display: flex;
 }
 
+.furntAll{
+  display: flex;
+  flex-wrap: wrap;
+ 
+
+}
+.container{
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+  color: #49493c;
+  text-align: center;
+ 
+}
+.contC{
+display: flex;
+flex-direction: column;
+}
+.contact{
+  display: flex;
+  justify-content: center;
+ }
+
+.textContact{
+  text-align: center;
+  font-family: 'Forum', cursive;
+  color:#49493c;
+  font-size: 20px;
+  padding: 10px;
+  }
+
+.imgContact{
+  box-shadow: 0 0 20px black;
+}
+
+.footer{
+  padding: 3px;
+  background-color: #3FB88B;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-family: 'Forum', cursive;
+ 	 }
+
+a{
+  text-decoration: none;
+  color: #580204;
+  padding: 10px;
+ }
+
+ .textFooter{
+  display: flex;
+  justify-content: center;
+  font-family: 'Forum', cursive;
+  color:#49493c;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 2px;
+ }
+
+ .btnPay{
+  background:#3FB88B;
+  padding: 10px;
+  border: none;
+  color:white;
+  width: 100px;
+  cursor: pointer;
+ margin: 20px;
+  }
+
+.stripeForm{
+margin: auto;
+}
+.totalQuantity{
+  padding: 40px;
+}
+.totalPrice{
+display: flex;
+justify-content: center;
+  color:#49493c;
+  font-family: 'Forum', cursive;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.cartList{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color:#49493c;
+  font-weight: bold;
+  font-weight: 10px;
+  font-family: 'Forum', cursive;
+   }
+
+.icon{
+  cursor: pointer;
+}
+.span{
+margin-top: 7px;
+}
+.price{
+  color: #ac0b0bde;
+}
+.log{
+margin-top: 40px;
+  text-align: center;
+  color:#49493c;
+  font-family: 'Forum', cursive;
+  font-size: 20px;
+}
+
+.login{
+  background:#cf6230;
+  margin-top: 30px;
+  padding: 10px;
+  border: none;
+  color:white;
+  width: 100px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgb(44, 38, 38);
+  border-radius: 8px;
+}
+.logout{
+  background:#3FB88B;
+  margin-top: 30px;
+  padding: 10px;
+  border: none;
+  color:white;
+  width: 100px;
+  cursor: pointer;
+  box-shadow: 0 0 15px green;
+  border-radius: 8px;
+}

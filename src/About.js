@@ -1,17 +1,33 @@
 import './App.css';
+import Footer from "./Footer";
 
 
 function About(){
 return <div className="about">
-<h1>Our Story</h1>
+
+<div className='brand'>
+<img src='https://cdn-icons-png.flaticon.com/512/1253/1253434.png?w=740&t=st=1685612494~exp=1685613094~hmac=b85a0ad149ccaa6c23434d1f16fd96646f9c9439eaacf80018bc249f8b0f3133' alt="icon" width="70px"/>
 <h3> OUR BRAND</h3>
-<p>Anthropologie is a unique, full-lifestyle shopping destination, with a mostly exclusive assortment of clothing, shoes, accessories, beauty, furniture, home décor, garden, bridal, and more. The brand opened its very first doors in the autumn of 1992 in Wayne, Pennsylvania, and today operates over 200 stores around the world.</p>
+<p>Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur.</p>
+</div>
+<div className='brandOne'>
+<img src='https://cdn-icons-png.flaticon.com/512/478/478587.png?w=740&t=st=1685613135~exp=1685613735~hmac=cb10bcf1694a045445b8412eb5e3b3a3e05029adcad4037d7074302a90970143' alt="icon" width="70px"/>
 <h3>OUR PEOPLE</h3>
-<p>Anthropologie is in constant conversation with our creative-minded community, and we take pride in our connection with individuals who prioritize self-expression and pursue inspiration, knowledge, and experience in the spirit of boundless curiosity.</p>
+<p>Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur.</p>
+</div>
+<div className='brandTwo'>
+<img src='https://cdn-icons-png.flaticon.com/512/329/329038.png?w=740&t=st=1685612816~exp=1685613416~hmac=07cb2eb80d111455eb3e452d278769e7ef824d3285cd1df3ded5cfa53d062311' alt="icon" width="70px"/>
 <h3>OUR CUSTOMER</h3>
-<p>Our customers are creative people, who want to be and look like themselves. They have a sense of adventure about what they wear, and take a thoughtful, personal approach to interior décor and the harmony of home. Although personal style is important to them, they’re not governed by trends. We listen to our customers and look to our community for inspiration and feedback – the intention is to exceed their every expectation, in unexpected ways.</p>
+<p>Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur.</p>
+</div>
+
+
+<div>
+<Footer/>
+</div>
 
 </div>
+
 
 }
 

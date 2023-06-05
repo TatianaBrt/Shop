@@ -5,7 +5,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const furnitursSlice=createSlice({
  name:"furnitures",
  initialState:{
-selectedCategory:"Chair"
+selectedCategory:"All"
  },
  reducers:{
     filterCategory: (state,action)=>{

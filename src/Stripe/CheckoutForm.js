@@ -4,9 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 
 import { useSelector } from "react-redux";
-import { getCartItems, getTotalPrice } from "../redux/cartSlice";
-
-
+import { getTotalPrice } from "../redux/cartSlice";
 
 
 export const CheckoutForm = () => {
@@ -15,11 +13,7 @@ export const CheckoutForm = () => {
   const [messageSuccess, setMessageSuccess]=useState(false);
 
 
-  const cartItems=useSelector(getCartItems);
 const totalPrice=useSelector(getTotalPrice)
-
-
-
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -35,7 +29,7 @@ const totalPrice=useSelector(getTotalPrice)
         const response = await axios.post(
           "http://localhost:8080/stripe/charge",
           {
-            amount: {totalPrice}*100,
+            amount: totalPrice*100,
             id: id,
           }
         );
@@ -55,10 +49,12 @@ const totalPrice=useSelector(getTotalPrice)
 
   return (<div>
     {!messageSuccess ?
-    <form onSubmit={handleSubmit} style={{ maxWidth: 400 }}>
-      <CardElement />
-      <button>Pay</button>
+    <div className="stripe">
+    <form className="stripeForm" onSubmit={handleSubmit} style={{ maxWidth: 300 }}>
+      <CardElement/>
+      <button className="btnPay">Pay</button>
     </form>
+    </div>
 :
 <div><h2>Your payment was successful!</h2></div>
 }

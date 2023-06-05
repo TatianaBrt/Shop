@@ -10,7 +10,7 @@ export const data=[
     
     {id: 3,
         image:"https://www.stolplit.ru/upload/resize_cache/iblock/25a/tttx5uxh0j344s0gp52sokmum4rya62k/1632_1400_0/i0000257481-detail.webp",
-        namef:"Диван-кровать",
+      
                 },
     
     {id: 4,

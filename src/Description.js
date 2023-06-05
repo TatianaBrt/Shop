@@ -9,7 +9,7 @@ function Description({description}){
     return (<div>
 {isOpen && <p className="description">{description}</p>}
 
-               <button className="details" onClick={() => setIsOpen(!isOpen)}>Details</button>
+<button className="details" onClick={() => setIsOpen(!isOpen)}>Details</button>
               
         </div>
     )

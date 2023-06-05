@@ -3,17 +3,15 @@ import Furniturs from "./Furniturs";
 
 
 
+
 function Catalog(){
     
         return  <div>
- 
-    <AllCategories/>
+     <AllCategories/>
     <Furniturs/>
-
-   
-    
-    </div>   
   
+    </div>
+    
 }
 
 
