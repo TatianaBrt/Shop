@@ -311,3 +311,8 @@ margin-top: 40px;
   box-shadow: 0 0 15px green;
   border-radius: 8px;
 }
+.success{
+  text-align: center;
+  font-family: 'Forum', cursive;
+  color: rgba(247, 7, 7, 0.968);
+}

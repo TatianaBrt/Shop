@@ -27,7 +27,7 @@ const totalPrice=useSelector(getTotalPrice)
       try {
         const { id } = paymentMethod;
         const response = await axios.post(
-          "https://shop-bf6w.onrender.com/stripe/charge",
+          "http://localhost:8080/stripe/charge",
           {
             amount: totalPrice*100,
             id: id,
@@ -56,7 +56,7 @@ const totalPrice=useSelector(getTotalPrice)
     </form>
     </div>
 :
-<div><h2>Your payment was successful!</h2></div>
+<div><h2 className="success">Your payment was successful!</h2></div>
 }
     </div>
  
