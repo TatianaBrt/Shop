@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { data } from "./dataSlider";
-import './App.css';
-import Footer from "./Footer";
+import { data } from "../dataSlider";
+import '../App.css';
+
 
 
 
@@ -46,7 +46,7 @@ function Home()
             <button className="buttonHome" onClick={nextProduct}><img src="https://cdn-icons-png.flaticon.com/512/60/60632.png?w=740&t=st=1681646331~exp=1681646931~hmac=c9ae20940151f29a4e2cf4102699832a73aa7d82b5cc589c64dcc6619c467eb1"alt="next" width="50px"/></button>
                    </div>
     
-               <Footer/>
+             
                </div>
 
 

@@ -1,10 +1,9 @@
 import { useState } from "react";
 import ChangeQuantity from "./ChangeQuantity";
-import { addItemToCart } from "./redux/cartSlice";
+import { addItemToCart } from "../redux/cartSlice";
 import { useDispatch } from "react-redux";
 import Description from "./Description";
-
-
+import Swal from "sweetalert2";
 
 
 const Furniture = ({furniture}) =>{
@@ -12,10 +11,9 @@ const Furniture = ({furniture}) =>{
  
 
   const dispatch=useDispatch();
-  const showAlert=()=>{
- alert ('Goods added to cart!')
+  const handleAlert =()=>{
+    Swal.fire('Item added to cart!')
   }
-
     return ( 
   <div className="container">
     <div className="product-card">
@@ -31,7 +29,7 @@ const Furniture = ({furniture}) =>{
 
 
 
-  <button className="btnAdd" onClick={()=>{dispatch(addItemToCart({furniture,quantity}));showAlert()}} >Add to cart</button>
+  <button className="btnAdd" onClick={()=>{dispatch(addItemToCart({furniture,quantity}));handleAlert()}} >Add to cart</button>
   
   </div>
   </div>

@@ -22,8 +22,8 @@ export const cartSlice=createSlice({
         state.cartItems=state.cartItems.filter(
           cartItem=>cartItem.id !==action.payload.cartItemId
         )
-      }
-   
+      },
+            
     }
    })
 

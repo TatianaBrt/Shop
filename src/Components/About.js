@@ -1,5 +1,5 @@
-import './App.css';
-import Footer from "./Footer";
+import '../App.css';
+
 
 
 function About(){
@@ -22,9 +22,7 @@ return <div className="about">
 </div>
 
 
-<div>
-<Footer/>
-</div>
+
 
 </div>
 

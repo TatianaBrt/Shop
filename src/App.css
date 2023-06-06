@@ -211,10 +211,10 @@ flex-direction: column;
 .footer{
   padding: 3px;
   background-color: #3FB88B;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
+position:fixed;
+width: 100%;
+bottom: 0;
+left: 0;
   font-family: 'Forum', cursive;
  	 }
 
@@ -241,7 +241,7 @@ a{
   color:white;
   width: 100px;
   cursor: pointer;
- margin: 20px;
+  margin: 20px;
   }
 
 .stripeForm{
@@ -257,13 +257,15 @@ justify-content: center;
   font-family: 'Forum', cursive;
   font-weight: bold;
   font-size: 20px;
-
 }
 
 .cartList{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 2%;
+flex-grow: 1;
+flex-basis: 16%;
   color:#49493c;
   font-weight: bold;
   font-weight: 10px;

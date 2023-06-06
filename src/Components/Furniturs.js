@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import Furniture from "./Furniture";
-import {data} from './data'
-import { getSelectedCategory } from "./redux/furnitursSlice";
+import {data} from '../data'
+import { getSelectedCategory } from "../redux/furnitursSlice";
 
 
 const Furniturs = () =>{

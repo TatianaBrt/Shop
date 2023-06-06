@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { filterCategory, getSelectedCategory } from "./redux/furnitursSlice";
+import { filterCategory, getSelectedCategory } from "../redux/furnitursSlice";
 
 
 const Filter = ({category}) =>{
