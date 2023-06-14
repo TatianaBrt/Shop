@@ -2,6 +2,8 @@ import { useSelector } from "react-redux";
 import CartItem from "./CartItem";
 import { getCartItems, getTotalPrice, getTotalQuantity} from "../redux/cartSlice";
 import StripeContainer from "../Stripe/StripeContainer";
+import '../App.css';
+
 
 const  Cart=()=>{
 const cartItems=useSelector(getCartItems);
@@ -23,6 +25,7 @@ const totalQuantity=useSelector(getTotalQuantity);
       {cartItems.map(cartItem=> <CartItem cartItem={cartItem} key={cartItem.id}/>)}
      
   </div>
+ 
     </div>
     )
 }

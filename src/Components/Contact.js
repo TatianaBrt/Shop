@@ -1,4 +1,5 @@
-import image from '../phone.jpg'
+import image from '../phone.jpg';
+import '../App.css';
 
 
 

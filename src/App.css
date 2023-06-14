@@ -2,7 +2,7 @@ nav{
   background:#3FB88B;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
   font-family: 'Forum', cursive;
   position: fixed;
   top: 0;
@@ -72,8 +72,14 @@ h4{
 .description{
   text-align:inherit;
   font-size: 15px;
+  transition: all 1s ease;
 
 }
+.description:hover{
+  transform: scale(1.2);
+  transition-duration: 2s;
+}
+
 .header{
   font-family: 'Forum', cursive;
   padding: 10px;
@@ -98,20 +104,76 @@ text-align: center;
   padding: 10px;
   border: none;
   color:white;
-  width: 100px;
   cursor: pointer;
-  box-shadow: 0 0 15px green;
-  border-radius: 8px;
+  box-shadow: 0 0 10px green;
+  border-radius: 50px;
+  font-family: 'Forum', cursive;
+  font-size: 15px;
+  font-weight: 550;
+  width:120px ;
+  height: 40px;
+  -webkit-transition-duration: .3s;
+        transition-duration: .3s;
+  }
+
+  .details:active {
+    -webkit-transform: translate(2px ,0px);
+      -ms-transform: translate(2px ,0px);
+          transform: translate(2px ,0px);
+  -webkit-box-shadow: 0px 2px 0px rgb(41, 125, 8);
+          box-shadow: 0px 2px 0px rgb(41, 125, 8);
+ padding-bottom: 10px;
   }
 
   .btnAdd{
-    background: #cf308a;
-    color: white;
+    width: 150px;
+    height: 40px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(214, 202, 254)), to(rgb(158, 129, 254)));
+    background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
     border: none;
-    padding: 10px;
-    width: 100px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5px;
     cursor: pointer;
+    -webkit-box-shadow: 1px 3px 0px rgb(139, 113, 255);
+            box-shadow: 1px 3px 0px rgb(139, 113, 255);
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+     margin: auto;
+    font-family: 'Forum', cursive;
+    font-weight: bolder;
+    font-size: 15px;
      }
+     .btnAdd:active{
+      -webkit-transform: translate(2px ,0px);
+      -ms-transform: translate(2px ,0px);
+          transform: translate(2px ,0px);
+  -webkit-box-shadow: 0px 1px 0px rgb(139, 113, 255);
+          box-shadow: 0px 1px 0px rgb(139, 113, 255);
+ padding-bottom: 2px;
+     }
+
+
+  .cartShop{
+    width: 14px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  }
+
+  .cartShop path{
+    fill: white;
+  }
+
   .btnQuantity{
     background: #ef9652;
     color: white;
@@ -147,7 +209,13 @@ justify-content: center;
 .furnImg{
   width: 200px;
   height: 250px;
+  transition: all 1s ease;
 }
+
+.furnImg:hover {
+  transform: scale(1.3);
+}
+
 .categoryButtonSelected{
   background-color: #3FB88B;
   cursor: pointer;
@@ -209,12 +277,15 @@ flex-direction: column;
 }
 
 .footer{
-  padding: 3px;
-  background-color: #3FB88B;
-position:fixed;
-width: 100%;
-bottom: 0;
-left: 0;
+position: relative;
+margin-top: 410px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:#3FB88B;
+  width: 100%;
+
+  color: #49493c;
   font-family: 'Forum', cursive;
  	 }
 
@@ -299,7 +370,9 @@ margin-top: 40px;
   cursor: pointer;
   box-shadow: 0 0 15px rgb(44, 38, 38);
   border-radius: 8px;
-}
+   }
+
+ 
 .logout{
   background:#3FB88B;
   margin-top: 30px;
@@ -316,3 +389,4 @@ margin-top: 40px;
   font-family: 'Forum', cursive;
   color: rgba(247, 7, 7, 0.968);
 }
+
