@@ -16,8 +16,6 @@ const LogIn=()=>{
     ))
 }
 
-exports.onExecutePostLogin = async (event, api) => {
-  api.redirect.sendUserTo("https://furniture-v1gs.onrender.com/log");
-};
+
 
 export default LogIn;
