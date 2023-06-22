@@ -10,7 +10,8 @@ const LogIn=()=>{
    const Auth0ProviderWithNavigate = ({ children }: Children) => {
  const navigate = useNavigate()
 
-      const onRedirectCallback = (appState: { returnTo?: `https://furniture-v1gs.onrender.com/log` })
+      const onRedirectCallback = (appState: { returnTo?: https://furniture-v1gs.onrender.com/log})=>{
+         navigate(appState?.returnTo || window.location.pathname)}
 
          
    
