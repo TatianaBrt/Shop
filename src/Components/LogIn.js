@@ -10,7 +10,7 @@ const LogIn=()=>{
         !isAuthenticated && (
  <div className='log'>
 
-      <button className='login'  onClick={() => loginWithRedirect({returnTo:'https://furniture-v1gs.onrender.com/log'})} >Log In</button>
+      <button className='login'  onClick={() => loginWithRedirect()} >Log In</button>
     </div>
     ))
 }
