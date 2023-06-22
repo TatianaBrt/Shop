@@ -10,9 +10,22 @@ nav{
   font-weight: bolder;
  }
 .Link{
-  padding: 10px 20px;
+  padding: 10px 30px;
   text-decoration: none;
   color: beige;
+}
+.linltxt{
+  padding: 30px;
+}
+.count{
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.bg{
+  background-color:  #ac0b0bde;
+  border-radius: 20%;
+
 }
 .logo{
   text-decoration: none;
@@ -21,6 +34,7 @@ nav{
   font-size: 30px;
   font-weight: bolder;
   font-family: 'Forum', cursive;
+  padding: 30px;
 }
 body{
   background:#FFDC0F;
@@ -333,7 +347,7 @@ justify-content: center;
 .cartList{
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: center;
 padding: 2%;
 flex-grow: 1;
 flex-basis: 16%;
@@ -342,7 +356,9 @@ flex-basis: 16%;
   font-weight: 10px;
   font-family: 'Forum', cursive;
    }
-
+.incart{
+  margin: 20px;
+}
 .icon{
   cursor: pointer;
 }
@@ -353,7 +369,7 @@ margin-top: 7px;
   color: #ac0b0bde;
 }
 .log{
-margin-top: 40px;
+margin-top: 150px;
   text-align: center;
   color:#49493c;
   font-family: 'Forum', cursive;

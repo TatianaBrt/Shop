@@ -139,7 +139,7 @@ export const data=[
       { id:18,
         image:"https://images.unsplash.com/photo-1509744645300-a2098b11871a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
         category:"Dresser",
-        namef:"Wallace Cane and Oak Armoire",
+        namef:"Wallace Cane",
         description:"Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur.",
         price:" 2998",
      

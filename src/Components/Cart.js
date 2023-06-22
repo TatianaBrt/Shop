@@ -5,6 +5,10 @@ import StripeContainer from "../Stripe/StripeContainer";
 import '../App.css';
 
 
+
+
+
+
 const  Cart=()=>{
 const cartItems=useSelector(getCartItems);
 const totalPrice=useSelector(getTotalPrice);
@@ -12,9 +16,12 @@ const totalQuantity=useSelector(getTotalQuantity);
 
 
 
+
+
     return (
+
         <div>
-            <div className="totalQuantity">
+                   <div className="totalQuantity">
        <span className="totalPrice">Total: $ {totalPrice} </span>
        <span className="totalPrice"> Quantity: {totalQuantity} </span>
        </div>
@@ -25,10 +32,12 @@ const totalQuantity=useSelector(getTotalQuantity);
       {cartItems.map(cartItem=> <CartItem cartItem={cartItem} key={cartItem.id}/>)}
      
   </div>
- 
+
     </div>
     )
 }
 
 
-export default Cart;
+
+  export default Cart;
+
