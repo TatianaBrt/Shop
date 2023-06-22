@@ -11,6 +11,7 @@ const LogIn=()=>{
  <div className='log'>
 
       <button className='login'  onClick={() => loginWithRedirect()} >Log In</button>
+      window.location.assign('https://furniture-v1gs.onrender.com/log')
     </div>
     ))
 }
