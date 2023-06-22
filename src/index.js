@@ -19,7 +19,7 @@ root.render(
   domain="dev-ii0l1odd5lj20cdp.eu.auth0.com"
   clientId="jOfU9rz8gKWCEGTRKk5FE2xZCkGAFX2H"
   authorizationParams={{
-    redirect_uri: window.location.origin
+    redirect_uri: window.location.log
   }}
 >
 <Provider store={store}>
