@@ -19,7 +19,7 @@ root.render(
   domain="dev-ii0l1odd5lj20cdp.eu.auth0.com"
   clientId="jOfU9rz8gKWCEGTRKk5FE2xZCkGAFX2H"
   authorizationParams={{
-    redirect_uri:window.location.href ='https://furniture-v1gs.onrender.com/log'
+    redirect_uri:window.location.origin
   }}
 >
 <Provider store={store}>
