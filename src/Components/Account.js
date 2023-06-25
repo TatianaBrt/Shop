@@ -8,7 +8,7 @@ const Account =()=>{
         <div className='log'>
       <p>{user.nickname}</p>
       <p>{user.email}</p>
-      <img src={user.picture}/>
+      <img src={user.picture} alt=/'person'>
         </div>
     ))
 }
