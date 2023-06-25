@@ -3,8 +3,6 @@ import ChangeQuantity from "./ChangeQuantity";
 import { addItemToCart } from "../redux/cartSlice";
 import { useDispatch } from "react-redux";
 import Description from "./Description";
-import Swal from "sweetalert2";
-
 
 const Furniture = ({furniture}) =>{
   const [quantity,setQuantity]=useState(1);
