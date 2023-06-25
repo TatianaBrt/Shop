@@ -1,6 +1,6 @@
 import {data} from '../data';
 import { useDispatch } from 'react-redux';
-import { removeItemFromCart,deleteCart } from '../redux/cartSlice';
+import { removeItemFromCart} from '../redux/cartSlice';
 
 
 
