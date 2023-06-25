@@ -1,4 +1,4 @@
-import { startTransition, useState } from "react";
+import { useState } from "react";
 import ChangeQuantity from "./ChangeQuantity";
 import { addItemToCart } from "../redux/cartSlice";
 import { useDispatch } from "react-redux";
