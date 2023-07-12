@@ -17,7 +17,7 @@ This project implements basic shopping cart and catalog features:
 
 ## Preview
 
-https://github.com/TatianaBrt/Shop/assets/115479875/c63ba29b-66ed-4b74-b55d-ecccd8c05f8b
+https://github.com/TatianaBrt/Shop/assets/115479875/52f79619-fbc7-424c-bd5b-fe8d140402f0
 
 
 
