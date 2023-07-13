@@ -13,6 +13,7 @@ This project implements basic shopping cart and catalog features:
 * Filter and sort items in catalog
 * Payments with stripe platform
 * User authorization Auth 0
+* used total for price and quantity items
 
 
 ## Preview
